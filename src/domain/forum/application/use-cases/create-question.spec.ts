@@ -1,4 +1,4 @@
-import { InMemoryQuestionsRepository } from '__test__/in-memory-questions-repository'
+import { InMemoryQuestionsRepository } from '__test__/repositories/in-memory-questions-repository'
 import { CreateQuestionUseCase } from './create-question'
 
 let inMemoryQuestionsRepository: InMemoryQuestionsRepository
