@@ -39,7 +39,7 @@ export class Question extends Entity<QuestionProps> {
     return this.props.createdAt
   }
 
-  get upodatedAt() {
+  get updatedAt() {
     return this.props.updatedAt
   }
 

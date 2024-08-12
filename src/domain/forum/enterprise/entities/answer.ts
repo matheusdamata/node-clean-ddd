@@ -27,7 +27,7 @@ export class Answer extends Entity<AnswerProps> {
     return this.props.createdAt
   }
 
-  get upodatedAt() {
+  get updatedAt() {
     return this.props.updatedAt
   }
 
