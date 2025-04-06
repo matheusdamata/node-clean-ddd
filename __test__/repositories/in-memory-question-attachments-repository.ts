@@ -8,9 +8,17 @@ export class InMemoryQuestionAttachmentsRepository
 
   async findManyByQuestionId(questionId: string) {
     const questionComment = this.items.filter(
-      (item) => item.id.toString() === questionId,
+      (item) => item.questionId.toString() === questionId,
     )
 
     return questionComment
+  }
+
+  async deleteManyByQuestionId(questionId: string) {
+    const questionComment = this.items.filter(
+      (item) => item.questionId.toString() !== questionId,
+    )
+
+    this.items = questionComment
   }
 }
