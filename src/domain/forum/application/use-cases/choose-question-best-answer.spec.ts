@@ -4,7 +4,7 @@ import { makeAnswer } from '__test__/factories/make-answer'
 import { InMemoryQuestionsRepository } from '__test__/repositories/in-memory-questions-repository'
 import { ChooseQuestionBestAnswerUseCase } from './choose-question-best-answer'
 import { makeQuestion } from '__test__/factories/make-question'
-import { NotAllowedError } from './errors/not-allowed-error'
+import { NotAllowedError } from '../../../../core/errors/errors/not-allowed-error'
 import { InMemoryQuestionAttachmentsRepository } from '__test__/repositories/in-memory-question-attachments-repository'
 import { InMemoryAnswerAttachmentsRepository } from '__test__/repositories/in-memory-answer-attachments-repository'
 
