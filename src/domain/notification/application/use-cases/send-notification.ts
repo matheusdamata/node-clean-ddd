@@ -9,7 +9,7 @@ interface SendNotificationUseCaseRequest {
   content: string
 }
 
-type SendNotificationUseCaseResponse = Either<
+export type SendNotificationUseCaseResponse = Either<
   null,
   {
     notification: Notification
